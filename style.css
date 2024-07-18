@@ -1,0 +1,115 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #b31507;
+}
+
+.table-content {
+    width: 70%;
+    table-layout: auto;
+    color: #262525;
+    background-color: #f8f9fa;
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 1.25em;
+}
+
+thead {
+    height: 70px;
+    width: 100%;
+
+    th {
+        text-transform: uppercase;
+        background-color: rgb(232, 220, 197);
+    }
+}
+
+th,
+td {
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.bottom>div {
+    position: relative;
+}
+
+#pagination {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 40px;
+    list-style: none;
+    padding: 2px;
+    padding-top: 10px;
+    text-align: center;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #e6e9d5;
+}
+
+.btnF,
+.btnL,
+.btnP,
+.btnN {
+    width: 80px;
+    height: 40px;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+#pagination li:active {
+    background-color: #0f8fb3;
+    color: white;
+}
+
+#pagination li.active {
+    background-color: #49c2ea;
+    color: rgb(24, 24, 24);
+}
+
+@media screen and (max-width: 480px) {
+
+    .btnF,
+    .btnL,
+    .btnP,
+    .btnN {
+        width: 40px;
+        height: 30px;
+        font-size: medium;
+    }
+
+    #pagination li {
+        width: 20px;
+        font-size: larger;
+    }
+
+    .btn {
+        padding: 2px;
+        padding-top: 5px;
+    }
+}
